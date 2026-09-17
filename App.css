@@ -1,0 +1,62 @@
+.app { max-width: 1000px; margin: 0 auto; padding: 24px; }
+.app-header { text-align: center; margin-bottom: 24px; }
+.app-header h1 { margin-bottom: 4px; }
+.app-header p { color: #6b7280; margin-top: 0; }
+
+.banner {
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.error-banner { background: #fee2e2; color: #991b1b; }
+.toast { background: #dcfce7; color: #166534; }
+
+.app-main { display: grid; grid-template-columns: 320px 1fr; gap: 24px; }
+@media (max-width: 760px) { .app-main { grid-template-columns: 1fr; } }
+
+.panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.student-form { display: flex; flex-direction: column; gap: 12px; }
+.student-form h2 { margin: 0 0 4px 0; font-size: 18px; }
+.student-form label { display: flex; flex-direction: column; font-size: 13px; font-weight: 600; color: #374151; gap: 4px; }
+.student-form input, .student-form select {
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-weight: 400;
+}
+.error { color: #dc2626; font-size: 12px; font-weight: 500; }
+
+.form-actions { display: flex; gap: 8px; margin-top: 8px; }
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 9px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #e5e7eb;
+  color: #111827;
+  font-weight: 600;
+}
+.btn.primary { background: #2563eb; color: white; }
+.btn.small { padding: 5px 10px; font-size: 12px; margin-right: 6px; }
+.btn.danger { background: #fee2e2; color: #991b1b; }
+.btn:hover { filter: brightness(0.95); }
+
+.toolbar { display: flex; gap: 10px; margin-bottom: 16px; }
+.search-input { flex: 1; padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; }
+.toolbar select { padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; }
+
+.student-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.student-table th { text-align: left; border-bottom: 2px solid #e5e7eb; padding: 8px; color: #6b7280; }
+.student-table td { padding: 8px; border-bottom: 1px solid #f3f4f6; }
+.actions { white-space: nowrap; }
+
+.empty-state { color: #6b7280; text-align: center; padding: 40px 0; }
